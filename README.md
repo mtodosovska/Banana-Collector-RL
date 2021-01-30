@@ -13,8 +13,9 @@ The project consists of the model.py and agent.py files, as well as the Navigati
 * model.py containes the code for the neural network.
 * agent.py represents the agent itself. Here the Q-learning logic is implemented. 
 * Navigation.ipynb containes the code for installing the neccessary libraries, importing them, initialising the environment, agent and model, and training and saving the model weights.
+* model.pth - the trained model's saved weights.
 
-These files, as well as the solution are based on the instructions and sample codes provided in the Udacity Deep RL Nanodegree.
+These files, as well as the solution and explanation are based on the instructions and sample codes provided in the Udacity Deep RL Nanodegree.
 
 
 
