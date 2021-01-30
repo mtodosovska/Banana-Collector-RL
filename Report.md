@@ -39,9 +39,9 @@ The solution could be improved by extending the q-learning algorithm itself in i
 * Dueling DQN: the dueling architecture separates the representation of state values and state-dependent action values via two separate streams the NN architecture. By doing this we can evaluate states, without having to check the effect of each action for each state. <sup>3</sup>
 
 ## References
-1 https://towardsdatascience.com/q-learning-algorithm-from-explanation-to-implementation-cdbeda2ea187
-2 https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc
-3 https://towardsdatascience.com/double-deep-q-networks-905dd8325412
-4 https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751
+1. https://towardsdatascience.com/q-learning-algorithm-from-explanation-to-implementation-cdbeda2ea187
+2. https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc
+3. https://towardsdatascience.com/double-deep-q-networks-905dd8325412
+4. https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751
 * https://deepmind.com/research/publications/human-level-control-through-deep-reinforcement-learning
 * https://en.wikipedia.org/wiki/Q-learning
