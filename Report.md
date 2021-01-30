@@ -35,8 +35,8 @@ The environment was solved in 474 episodes, with an average score of 13.06 over 
 
 The solution could be improved by extending the q-learning algorithm itself in its weak spots. Some of the possible approaches are:
 * Double DQN: double DQN introduces the use of two Q-value estimators. Overfitting can be avoided by using the frozen wights from the secondary neural network for the test set.
-* Dueling DQN: the dueling architecture separates the representation of state values and state-dependent action values via two separate streams the NN architecture. By doing this we can evaluate states, without having to check the effect of each action for each state.
 * Prioritized experience replay: in experience replay prioritizing the choice of samples that stem from larger errors in the estimated values. The error is used to calculate the probability for the choice of samples, i.e. samples with larger errors have a better chance of being selected for replay.
+* Dueling DQN: the dueling architecture separates the representation of state values and state-dependent action values via two separate streams the NN architecture. By doing this we can evaluate states, without having to check the effect of each action for each state.
 
 ## References
 * https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751
