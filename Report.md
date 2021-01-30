@@ -8,7 +8,7 @@ The learning algorithm used for this solution is Q-learning implemented with dee
 
 Q-learning learns the action-value function, it determines the value of taking an action at a certain state by assigning a scalar for every action at every state. It also balances exploration (trying new previously untried or rarely tried actions at certain states) and exploitation (using the action that would provide the best reward at the given state).
 
-Deep Q-learning uses neural networks in order to estimate the Q-values for each action instead of a Q-table. Environments where the state and/or action space is continuous or large would make defining a Q-table too complex.
+Deep Q-learning uses neural networks in order to estimate the Q-values for each action instead of a Q-table. Environments where the state and/or action space is continuous or large enough would make defining a Q-table too complex.
 
 ## Hyperparameters
 
@@ -35,5 +35,13 @@ The environment was solved in 474 episodes, with an average score of 13.06 over 
 
 The solution could be improved by extending the q-learning algorithm itself in its weak spots. Some of the possible approaches are:
 * Double DQN: double DQN introduces the use of two Q-value estimators. Overfitting can be avoided by using the frozen wights from the secondary neural network for the test set.
-* Dueling DQN: the dueling architecture explicitly separates the representation of state values and state-dependent action values via two separate streams the NN architecture. By doing this we can evaluate states, without having to check the effect of each action for each state.
+* Dueling DQN: the dueling architecture separates the representation of state values and state-dependent action values via two separate streams the NN architecture. By doing this we can evaluate states, without having to check the effect of each action for each state.
 * Prioritized experience replay: in experience replay prioritizing the choice of samples that stem from larger errors in the estimated values. The error is used to calculate the probability for the choice of samples, i.e. samples with larger errors have a better chance of being selected for replay.
+
+## References
+* https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751
+* https://towardsdatascience.com/double-deep-q-networks-905dd8325412
+* https://towardsdatascience.com/q-learning-algorithm-from-explanation-to-implementation-cdbeda2ea187
+* https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc
+* https://deepmind.com/research/publications/human-level-control-through-deep-reinforcement-learning
+* https://en.wikipedia.org/wiki/Q-learning
