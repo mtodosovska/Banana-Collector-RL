@@ -29,7 +29,7 @@ The architecture of the network consists of 3 fully connected layers, with ReLU 
 
 The environment was solved in 474 episodes, with an average score of 13.04 over the last 100 episodes. The figure below shows the plot of the rewards leading to the solution of the environment.
 
-<img src="/score.png"/>
+<img src="/score_plot.png"/>
 
 ## Future work	 	
 
